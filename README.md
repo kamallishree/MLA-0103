@@ -1,4 +1,4 @@
-## BFS PSEUDO CODE ##
+## BFS  ##
 BFS(Graph, Start)
 
 Create an empty queue
@@ -32,7 +32,7 @@ For each Neighbor of Start
 End For
 
 
-## ALPHA BETA PRUNING##
+## ALPHA BETA PRUNING ##
 START
 
 Input the depth of the game tree
