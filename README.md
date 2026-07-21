@@ -30,3 +30,70 @@ For each Neighbor of Start
         DFS(Graph, Neighbor)
     End If
 End For
+
+**ALPHA BETA PRUNING**
+## Pseudocode
+
+START
+
+Input the depth of the game tree
+
+Calculate the number of leaf nodes (2^depth)
+
+Input the leaf node values
+
+Initialize Alpha = -∞
+
+Initialize Beta = +∞
+
+Call AlphaBeta(Root, Depth, Alpha, Beta, TRUE)
+
+Print the optimal value
+
+STOP
+
+Procedure AlphaBeta(Node, Depth, Alpha, Beta, MaximizingPlayer)
+
+    If Depth = 0
+        Return the value of the current node
+    End If
+
+    If MaximizingPlayer is TRUE
+
+        Best = -∞
+
+        For each child of the current node
+
+            Best = max(Best, AlphaBeta(Child, Depth - 1, Alpha, Beta, FALSE))
+
+            Alpha = max(Alpha, Best)
+
+            If Alpha ≥ Beta
+                Break
+            End If
+
+        End For
+
+        Return Best
+
+    Else
+
+        Best = +∞
+
+        For each child of the current node
+
+            Best = min(Best, AlphaBeta(Child, Depth - 1, Alpha, Beta, TRUE))
+
+            Beta = min(Beta, Best)
+
+            If Alpha ≥ Beta
+                Break
+            End If
+
+        End For
+
+        Return Best
+
+    End If
+
+End Procedure
