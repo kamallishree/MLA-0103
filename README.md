@@ -31,8 +31,8 @@ For each Neighbor of Start
     End If
 End For
 
+
 **ALPHA BETA PRUNING**
-## Pseudocode
 
 START
 
