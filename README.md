@@ -96,3 +96,35 @@ Procedure AlphaBeta(Node, Depth, Alpha, Beta, MaximizingPlayer)
     End If
 
 End Procedure
+
+## MARCUS ##
+
+START
+
+Declare Marcus as a man.
+Declare Marcus as a Pompeian.
+Declare Caesar as a ruler.
+Declare that Marcus tried to assassinate Caesar.
+
+IF a person is a Pompeian
+    THEN declare the person as a Roman.
+
+IF a person is a man
+    THEN declare the person as a person.
+
+IF a person tried to assassinate a ruler
+    THEN declare the person is not loyal to that ruler.
+
+IF a Roman is not loyal to Caesar
+    THEN declare that Roman hates Caesar.
+
+IF a Roman is loyal to Caesar
+    THEN declare the Roman is loyal to Caesar.
+
+Check whether Marcus is loyal to Caesar.
+Display the result.
+
+Check whether Marcus hates Caesar.
+Display the result.
+
+STOP
